@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://personal-color-self-test.enjoy-onepage.com/sitemap.xml
