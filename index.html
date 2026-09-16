@@ -3,21 +3,57 @@
 <html lang="ko">
 <head>
 <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "퍼스널 컬러 자가진단 테스트 | 웜톤·쿨톤 4계절 정밀 진단기",
-    "description": "12가지 정밀 피부톤·눈동자·혈관·헤어 색상 문항 기반 4계절 퍼스널 컬러(봄 웜, 여름 쿨, 가을 웜, 겨울 쿨) 실시간 자가진단 및 추천 메이크업·패션 컬러 팔레트 제공.",
-    "url": "https://personal-color-self-test.enjoy-onepage.com/",
-    "applicationCategory": "LifestyleApplication",
-    "operatingSystem": "All",
-    "browserRequirements": "Requires JavaScript. Requires HTML5.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "KRW"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://personal-color-self-test.enjoy-onepage.com/#webapp",
+      "name": "웜톤·쿨톤 4계절 퍼스널 컬러 정밀 자가진단기",
+      "url": "https://personal-color-self-test.enjoy-onepage.com/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "12문항으로 3분 만에 알아보는 나의 퍼스널 컬러! 봄 웜, 여름 쿨, 가을 웜, 겨울 쿨 정밀 분석 및 베스트/워스트 컬러 팔레트 추천.",
+      "image": "https://personal-color-self-test.enjoy-onepage.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://personal-color-self-test.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "태닝을 하거나 피부가 타면 쿨톤이 웜톤으로 바뀌나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. 겉 피부 톤(Skin Tone)은 자외선으로 어두워질 수 있지만, 타고난 멜라닌과 헤모글로빈 비율인 언더톤(Undertone)은 평생 변하지 않습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "워스트 컬러 옷은 절대 입으면 안 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "상의로 입을 때는 얼굴과 거리가 있는 브이넥을 입거나, 이너웨어/스카프를 베스트 컬러로 레이어드하면 단점을 완벽히 보완할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "파운데이션 21호, 23호 선택과 웜/쿨톤의 관계는?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "호수는 피부의 밝기(명도)를 뜻하며, 웜톤은 옐로우 베이스(웜 베이지), 쿨톤은 핑크 베이스(로지 베이지)를 선택해야 다크닝 없이 밀착됩니다."
+          }
+        }
+      ]
     }
-  }
+  ]
+}
   </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
