@@ -61,7 +61,7 @@
   </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>퍼스널 컬러 자가진단 테스트 | 웜톤·쿨톤 4계절</title>
+<title>퍼스널 컬러 자가진단 | 웜톤·쿨톤 4계절</title>
 <meta content="12문항으로 3분 만에 알아보는 나의 퍼스널 컬러!" name="description"/>
 <meta content="퍼스널 컬러 자가진단, 웜톤 쿨톤 테스트, 봄 웜톤, 여름 쿨톤, 가을 웜톤, 겨울 쿨톤, 퍼스널 컬러 팔레트" name="keywords"/>
 <meta content="index, follow" name="robots"/>
@@ -828,7 +828,7 @@
       let textToCopy = customText;
       if (!textToCopy) {
         const resEl = document.querySelector('#resultBox, .result-card, #result, [id*="result"], [class*="result"], [id*="res"]');
-        textToCopy = resEl ? resEl.innerText.trim() : document.title;
+        textToCopy = resEl ? resEl.textContent.trim() : document.title;
       }
       const fullText = textToCopy + "\n\n👉 바로가기: " + window.location.href;
       if (navigator.clipboard && navigator.clipboard.writeText) {
